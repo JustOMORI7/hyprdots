@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 5,
+    "modules-left": [
+        "custom/blank",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "custom/music"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "custom/brightness",
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+        "custom/blank"
+    ],
+    "hyprland/window": {
+        "format": "  {}",
+        "max-length": 50
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 2
+    },
+    "memory": {
+        "format": "  {}%",
+        "interval": 5
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀  {ipaddr}",
+        "format-disconnected": "  Offline",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol"
+    },
+    "clock": {
+        "format": "  {:%H:%M}",
+        "tooltip": "  {:%d/%m/%Y}"
+    },
+    "custom/music": {  
+        "exec": "playerctl -p audacious metadata --format '  {{title}}'",  
+        "interval": 2,  
+        "on-click": "playerctl -p audacious play-pause",  
+        "on-scroll-up": "playerctl -p audacious next",  
+        "on-scroll-down": "playerctl -p audacious previous"  
+    }, 
+    "custom/brightness": {
+        "exec": "brightnessctl -m | awk -F, '{print substr($4, 0, length($4)-1)}'",
+        "format": "󰃠 {}",
+        "on-scroll-up": "brightnessctl s +10%",
+        "on-scroll-down": "brightnessctl s 10%-",
+        "interval": 1 
+    },
+    "custom/blank": {
+        "format": " "
+    }
+}

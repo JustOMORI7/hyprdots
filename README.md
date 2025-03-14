@@ -24,5 +24,7 @@ Then reboot!
 | Lock Screen | `Ctrl` + `Alt` + `L` |
 
 ---
-**Screenshot:**
-![screenshot1](https://github.com/iamGHOST755/dotfiles/blob/main/screenshot-1.jpg)
+**Screenshots:**
+![screenshot1](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot1.png)
+![screenshot2](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot2.png)
+![screenshot3](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot3.png)

@@ -52,7 +52,7 @@
         "tooltip": "  {:%d/%m/%Y}"
     },
     "custom/music": {  
-        "exec": "playerctl -p audacious metadata --format '  {{title}}'",  
+        "exec": "playerctl -p qmmp metadata --format '  {{title}}'",  
         "interval": 2,  
         "on-click": "playerctl -p audacious play-pause",  
         "on-scroll-up": "playerctl -p audacious next",  

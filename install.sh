@@ -22,4 +22,7 @@ cp -rf ~/hyprdots/config/* ~/.config
 sudo systemctl enable sddm
 xdg-user-dirs-update
 
+mkdir -p ~/Pictures/Wallpaper
+cp ~/hyprdots/assets/wallpaper1.jpg ~/Pictures/Wallpaper/
+
 echo "Installation finished. Please reboot your system."

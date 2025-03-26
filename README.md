@@ -2,6 +2,8 @@
 
 ---
 Installation:
+
+Perform a minimal Arch install
 ```
 $ git clone https://github.com/iamGHOST755/hyprdots.git ~/hyprdots
 $ cd ~/hyprdots
@@ -13,6 +15,7 @@ Then reboot!
 ---
 | | Shortcuts |
 | :----- | :------ |
+| Super | `Windows Key or Caps Lock` |
 | Rofi | `Super` + `D` |
 | Toggle Float | `Super` + `Shift` + `Space` |
 | Close Active Window | `Super` + `Q` |

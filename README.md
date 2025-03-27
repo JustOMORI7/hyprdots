@@ -21,9 +21,9 @@ Then reboot!
 | Close Active Window | `Super` + `Q` |
 | Screenshot | `Super` + `Shift` + `S` |
 | Terminal | `Super` + `Return` |
-| Firefox | `Super` + `F` |
-| Power Menu | `Ctrl` + `Alt` + `P` |
+| Zen Browser | `Super` + `F` |
 | Thunar | `Super` + `T` |
+| Power Menu | `Ctrl` + `Alt` + `P` |
 | Lock Screen | `Ctrl` + `Alt` + `L` |
 
 ---

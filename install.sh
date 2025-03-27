@@ -17,9 +17,10 @@ else
     echo "Yay installed! Installing packages"
 fi  
 
-yay -S hyprland kitty mpv swaybg qt5ct qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git zen-browser-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum qt5 kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber
+yay -S hyprland kitty mpv swaybg bluez bluez-utils blueman qt5ct qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git zen-browser-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum qt5 kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber
 cp -rf ~/hyprdots/config/* ~/.config
 sudo systemctl enable sddm
+sudo systemctl enable bluetooth
 xdg-user-dirs-update
 
 mkdir -p ~/Pictures/Wallpaper

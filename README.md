@@ -16,9 +16,11 @@ $ ./install.sh
 Then reboot!
 
 ---
-| | Shortcuts |
+**Keybindings:**
+
+| Action | Shortcuts |
 | :----- | :------ |
-| Super | `Windows Key or Caps Lock` |
+| Super Key | `Windows Key or Caps Lock` |
 | Rofi | `Super` + `D` |
 | Toggle Float | `Super` + `Shift` + `Space` |
 | Close Active Window | `Super` + `Q` |
@@ -34,3 +36,6 @@ Then reboot!
 ![screenshot1](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot1.png)
 ![screenshot2](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot2.png)
 ![screenshot3](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot3.png)
+
+---
+For more information on Hyprland, check out the [official documentation](https://hyprland.org/).

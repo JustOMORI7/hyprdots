@@ -1,9 +1,12 @@
 ***My Hyprland Configuration***
 
 ---
-Installation:
+**Installation:**
 
-Perform a minimal Arch install
+Prerequisites
+- Perform a minimal Arch Linux installation. If you're new to Arch, follow the [official Arch installation guide](https://wiki.archlinux.org/title/installation_guide).
+- Ensure you have `git` installed (`sudo pacman -S git`).
+  
 ```
 $ git clone https://github.com/iamGHOST755/hyprdots.git ~/hyprdots
 $ cd ~/hyprdots

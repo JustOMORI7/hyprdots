@@ -1,0 +1,65 @@
+* {
+    border: 1px;
+    font-family: "CaskaydiaMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    /*background: rgba(40, 42, 54, 0.9);  Dracula tema arkaplan */
+    /*background-color: rgba(0,0,0,0);*/
+    background: rgba(26, 26, 26, 0.82);
+    color: #f8f8f2;
+    border-radius: 10;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 5 3px;
+    color: #9c9c9c;
+    background: #3a3a3a;
+    border-radius: 5;
+}
+
+#workspaces button.active {
+    color: #f8f8f2; /* Aktif çalışma alanı rengi */
+}
+
+#window {
+    color: #ff79c6;
+    padding: 0 12px;
+    /*margin: 5 3px;
+    background: #44475a;
+    border-radius: 5px;*/
+}
+
+#cpu, #memory, #network, #pulseaudio, #clock {
+    padding: 0 10px;
+    margin: 5 3px;
+    background: #3a3a3a;
+    border-radius: 5px;
+}
+
+#custom-music {  
+    color: #1DB954; /*color: #50fa7b;*/  
+    padding: 0 10px;
+    margin: 5 3px;  
+    /*background: #44475a;*/  
+    border-radius: 5px;  
+}  
+
+#custom-music:hover {
+    background: #2a2a2a;
+    transition: 0.3s;
+}
+
+#custom-brightness {
+    background: #3a3a3a;
+    padding: 0 10px;
+    margin: 5 3px;
+    border-radius: 5px;
+}
+
+#clock {
+    color: #bd93f9;
+}

@@ -17,7 +17,7 @@ else
     echo "paru installed! Installing packages..."
 fi  
 
-paru -S --noconfirm hyprland fastfetch kitty mpv swaybg grim slup bluez bluez-utils blueman qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git floorp-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber ttf-cascadia-mono-nerd
+paru -S --noconfirm hyprland fastfetch kitty mpv swaybg grim slurp bluez bluez-utils blueman qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git floorp-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber ttf-cascadia-mono-nerd
 
 echo "Copying configuration files..."
 

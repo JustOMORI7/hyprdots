@@ -5,25 +5,35 @@ clear
 echo "Press any key to continue. Ctrl + C to cancel."  
 read -n 1 -s -r # wait key press
 
-# check yay
-if command -v yay &> /dev/null; then  
-    echo "Yay found! Installing packages"
+# check paru
+if command -v paru &> /dev/null; then  
+    echo "paru found! Installing packages..."
 else  
-    echo "Yay not found. Installing yay"
+    echo "paru not found. Installing paru..."
     cd ~
-    git clone https://aur.archlinux.org/yay-bin.git
-    cd yay-bin
+    git clone https://aur.archlinux.org/paru-bin.git
+    cd paru-bin
     makepkg -si
-    echo "Yay installed! Installing packages"
+    echo "paru installed! Installing packages..."
 fi  
 
-yay -S hyprland kitty mpv swaybg bluez bluez-utils blueman qt5ct qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git zen-browser-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum qt5 kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber
+paru -S --noconfirm hyprland fastfetch kitty mpv swaybg bluez bluez-utils blueman qt6ct kvantum-qt5 ttf-jetbrains-mono-nerd eog dracula-rofi-git floorp-bin rofi waybar thunar thunar-volman gvfs gvfs-mtp lxappearance nwg-look materia-gtk-theme papirus-icon-theme polkit-kde-agent sddm brightnessctl pavucontrol xdg-user-dirs hyprnotify fish kvantum kvantum-theme-materia bibata-cursor-theme-bin wlogout swaylock hyprshot playerctl pipewire pipewire-jack pipewire-alsa pipewire-audio pipewire-pulse wireplumber ttf-cascadia-mono-nerd
+
+echo "Copying configuration files..."
+
+rm -rf ~/.config/kitty ~/.config/hypr ~/.config/gtk-2.0 ~/.config/gtk-3.0 ~/.config/Kvantum ~/.config/nwg-look ~/.config/waybar ~/.config/qt6ct ~/.config/rofi ~/.config/fastfetch
 cp -rf ~/hyprdots/config/* ~/.config
+
+mkdir -p ~/.local/share/rofi/themes
+mv ~/.config/squared-nord.rasi ~/.local/share/rofi/themes/squared-nord.rasi
+
 sudo systemctl enable sddm
 sudo systemctl enable bluetooth
 xdg-user-dirs-update
 
-mkdir -p ~/Pictures/Wallpaper
-cp ~/hyprdots/assets/wallpaper1.jpg ~/Pictures/Wallpaper/
+mkdir -p ~/Pictures/Wallpapers
+cp ~/hyprdots/assets/wallpaper-1.jpg ~/Pictures/Wallpapers/
+
+rm -rf ~/paru-bin
 
 echo "Installation finished. Please reboot your system."

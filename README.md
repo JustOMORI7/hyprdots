@@ -8,7 +8,7 @@ Prerequisites
 - Ensure you have `git` installed (`sudo pacman -S git`).
   
 ```
-$ git clone https://github.com/iamGHOST755/hyprdots.git ~/hyprdots
+$ git clone https://github.com/JustOMORI7/hyprdots.git ~/hyprdots
 $ cd ~/hyprdots
 $ chmod +x install.sh
 $ ./install.sh
@@ -33,9 +33,9 @@ Then reboot!
 
 ---
 **Screenshots:**
-![screenshot1](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot1.png)
-![screenshot2](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot2.png)
-![screenshot3](https://github.com/iamGHOST755/hyprdots/blob/main/assets/screenshot3.png)
+![screenshot1](https://github.com/JustOMORI7/hyprdots/blob/main/assets/screenshot1.png)
+![screenshot2](https://github.com/JustOMORI7/hyprdots/blob/main/assets/screenshot2.png)
+![screenshot3](https://github.com/JustOMORI7/hyprdots/blob/main/assets/screenshot3.png)
 
 ---
 For more information on Hyprland, check out the [official documentation](https://hyprland.org/).
